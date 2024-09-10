@@ -21,7 +21,12 @@ function buildGrid(cellNo)
         divCell.style.height = `${sizePer}%`;
 
         divCell.addEventListener("mouseenter", (event) => {
-            event.target.style.backgroundColor = "#ff69b4";
+            const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+            const r = randomBetween(0, 255);
+            const g = randomBetween(0, 255);
+            const b = randomBetween(0, 255);
+
+            event.target.style.backgroundColor = `rgb(${r},${g},${b})`;
             event.target.style.opacity -= "-0.1";
         });
 
