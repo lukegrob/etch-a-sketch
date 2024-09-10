@@ -14,6 +14,11 @@ function buildGrid(cellNo)
         // divCell.style.border = "1px solid red";
         divCell.style.width = `${sizePer}%`;
         divCell.style.height = `${sizePer}%`;
+
+        divCell.addEventListener("mouseenter", (event) => {
+            event.target.style.backgroundColor = "pink";
+        });
+
         container.appendChild(divCell);
     }
 }
