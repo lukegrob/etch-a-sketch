@@ -20,6 +20,13 @@ body {
     height:600px;
     /* border:1px solid red; */
     display:flex;
+    flex-wrap:wrap;
 
     background: white;
+}
+
+.cell {
+    outline-style: solid;
+    outline-color:lightgray;
+    outline-width:thin;
 }
