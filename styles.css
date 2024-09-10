@@ -33,7 +33,7 @@ body {
 }
 
 .cell {
-    outline-style: solid;
+    /* outline-style: solid;
     outline-color:lightgray;
-    outline-width:thin;
+    outline-width:thin; */
 }
